@@ -4,7 +4,7 @@ import { createSlice,createAsyncThunk, asyncThunkCreator } from "@reduxjs/toolki
 //Asyn thunk to fetch data
 export const fetchData = createAsyncThunk('data/fetchData',async()=>{
         const key="83ece5f93e12436999614d298bbb9305"
-        const food = await fetch("https://api.spoonacular.com/recipes/random?number=10&apiKey="+key)
+        const food = await fetch("https://api.spoonacular.com/recipes/random?number=25&apiKey="+key)
         const data = await food.json()
         const cleaned = data.recipes.map((obj)=>({
             id: obj.id,

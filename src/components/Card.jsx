@@ -1,12 +1,12 @@
 import React from 'react'
-import data from '../API/callMe'
+
 
 function Card(props) {
   return (
     <>  
         
         
-        <div className='shadow-2xl w-80 h-100 rounded-2xl m-5 p-4'>
+        <div className='bg-white shadow-2xl w-screen h-1/2 sm:w-80 sm:h-100 rounded-2xl p-4 col-span-4'>
             {/* <div>
                 image
             </div> */}
@@ -24,7 +24,7 @@ function Card(props) {
                 <div>{props.Veg?<p className='text-green-700'>"Veg"</p>:"Non-Veg"}</div>
             </div>
             <div className='relative bottom-0 flex justify-center w-full' >
-                <button className='bg-green-600 text-white font-bold p-2 rounded-xl' >Cook Me</button>
+                <button className='bg-green-600 text-white font-bold p-2 rounded-lg' >Cook Me</button>
             </div>
             
         </div>

@@ -16,7 +16,7 @@ function Posts() {
   return (
     <>
       
-      <div className='flex flex-wrap'>
+      <div className='w-full flex justify-around space-y-5 flex-wrap overflow-x-hidden p-3'>
         {
           items.map(food=> {
             return <Card key={food.id} img={food.img} title={food.title} Time={food.Time} isVeg={food.isVeg} ingredients={food.ingredients} summary={food.summary}/>
